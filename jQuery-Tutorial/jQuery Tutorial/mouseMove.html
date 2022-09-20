@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The mousemove Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+    <!-- jQuery code to show the working of this method -->
+    <script>
+        $(document).ready(function () {
+            $("div").mousemove(function () {
+                $("p").css("background-color", "blue");
+            });
+
+            $("div").mouseleave(function(){
+                $("p").css("background-color", "green");
+            });
+        });
+    </script>
+    <style>
+        div {
+            width: 300px;
+            padding: 15px;
+            height: 50px;
+            border: 1px solid orange;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- move over this text to see the change -->
+        <p>Move over this paragraph.</p>
+    </div>
+</body>
+
+</html>

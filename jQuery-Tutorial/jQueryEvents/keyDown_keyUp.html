@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        /*
+        $(document).ready(function () {
+            $("input").keydown(function () {
+                var data = $("input").val();
+                $("#message").html(data);
+            });
+        });
+*/
+        $(document).ready(function () {
+            $("input").keyup(function () {
+                var data = $("input").val();
+                $("#message").html(data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    Enter your name: <input type="text">
+
+    <p id="message"></p>
+
+</body>
+
+</html>

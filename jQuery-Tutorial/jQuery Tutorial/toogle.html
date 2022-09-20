@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>toogle() jQuery Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        h2 {
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#div").toggle(); // hide and Show
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="button">Show/Hide</button>
+    <br>
+    <br>
+    <div id="div" style="width:400;height:100px;display:none;background-color:green;">
+        <h2>STUDENTS TUTORIAL</h2>
+    </div>
+
+</body>
+
+</html>

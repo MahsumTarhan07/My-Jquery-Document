@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>mouseup demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p>Press mouse and release here.</p>
+
+    <script>
+        $("p").mouseup(function(){
+            $(this).append("<span style='color:green'> Mouse Up </span>");
+        });
+
+        $("p").mousedown(function(){
+            $(this).append("<span style='color:red'> Mouse Down </span>");
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

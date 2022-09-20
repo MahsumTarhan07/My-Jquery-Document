@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Toggle boxes</title>
+
+    <style>
+        h2 {
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="out">fade toggle boxes</button>
+    <br>
+    <br>
+    <div id="div" style="width:400;height:100px;background-color:green;">
+        <h2 style="color:white;text-align:center;padding-top:40px;">STUDENTS TUTORIAl</h2>
+    </div>
+
+    
+    <script>
+       $(document).ready(function(){
+        $('#out').click(function(){
+            $('#div').fadeToggle("fast");
+        });
+       });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script>
+        count = 0;
+        $(document).ready(function () {
+            $("select").change(function(){
+                var data = $("select option:selected").val();
+                if(data!=""){
+                    $("#message").text(data);
+                }else{
+                    $("#message").text("Nothing");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <select>
+        <option value="">Select</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Football">Football</option>
+        <option value="Hockey">Hockey</option>
+    </select>
+    <p>You Select: <span id="message"></span></p>
+
+</body>
+
+</html>

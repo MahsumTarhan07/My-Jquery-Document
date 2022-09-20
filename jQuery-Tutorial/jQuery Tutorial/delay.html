@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jquery code to demonstrate delay method -->
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               $("#b1").delay("slow").fadeIn();
+               $("#b2").delay("fast").fadeIn();
+               $("#b3").delay(2000).fadeIn();
+               $("#b4").delay(3000).fadeIn();
+            });
+        }); 
+    </script>
+</head>
+
+<body>
+    <!-- The delay() method is used to delay the execution of functions that follow it in the queue.It is an inbuilt method of jQuery. -->
+    <!-- click on this button -->
+    <button>Click Me!</button>
+    <br>
+    <br>
+    <div id="b1" style="width:70px;height:70px;display: 
+                   none;background-color:lightgreen;"></div>
+    <br>
+    <div id="b2" style="width:70px;height:70px;display: 
+                   none;background-color:green;"></div>
+    <br>
+    <div id="b3" style="width:70px;height:70px;display: 
+                   none;background-color:blue;"></div>
+    <br>
+    <div id="b4" style="width:70px;height:70px;display: 
+                   none;background-color:orange;"></div>
+    <br>
+</body>
+
+</html>

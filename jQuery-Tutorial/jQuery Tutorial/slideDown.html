@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>slide down</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        #div {
+            height: 150px;
+            width: 150px;
+            background-color: #4c00ff;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #div {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $('#div').slideDown("fast");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div"></div>
+    <br>
+    <button id="btn">Click to slide down</button>
+
+
+</body>
+
+</html>

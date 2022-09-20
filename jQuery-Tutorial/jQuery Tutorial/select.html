@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>select demo</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        div {
+            color: red;
+        }
+        textarea{
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+
+    <p>Click and drag the mouse to select text in the inputs.</p>
+    <input type="text" value="Some text">
+    <textarea name="" id="" cols="30" rows="10">TextArea</textarea>
+
+    <script>
+        $(document).ready(function () {
+            $("input").select(function () {
+                alert("İnput Selected");
+            });
+            $("textarea").select(function () {
+                alert("TextArea Selected");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

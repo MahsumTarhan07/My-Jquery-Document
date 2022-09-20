@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>fade Out</title>
+    <style>
+        h2 {
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#out').click(function () {
+                $('#div').fadeOut("slow");
+            });
+        });
+
+    </script>
+
+
+
+    <button id="out">fade out boxes</button>
+    <br>
+    <br>
+    <div id="div" style="width:400;height:100px;background-color:green;">
+        <h2 style="color:white;text-align:center;padding-top:40px;">STUDENTS TUTORIAl</h2>
+    </div>
+
+
+</body>
+
+</html>

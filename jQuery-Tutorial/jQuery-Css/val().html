@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#get").click(function () {
+                var name = $("#name").val();
+                var lastname = $("#lastname").val();
+                alert(name + " " + lastname);
+            });
+            $("$set").click(function () {
+                $("#name").val("Lary");
+                $("#lastname").val("Vardy");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <input type="text" name="first_name" value="John" id="name">
+    <input type="text" name="first_name" value="Deo" id="lastname"><br><br>
+
+    <button id="get">GET Value</button>
+    <button id="set">SET Value</button>
+
+</body>
+
+</html>

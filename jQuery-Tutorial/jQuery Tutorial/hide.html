@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>hide() jQuery Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        h2 {
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#div").hide()
+            });
+        });
+
+        /*
+        1) $(selector).hide();
+        2) $(selector).hide(speed, callback);
+        3) $(selector).hide(speed, easing, callback);
+        */
+    </script>
+</head>
+
+<body>
+    <button id="button">Hide div</button>
+    <br>
+    <br>
+    <div id="div" style="width:400;height:100px;background-color:green;">
+        <h2 style="color:white;text-align:center;padding-top:40px;">STUDENTS TUTORIAL</h2>
+    </div>
+
+    <p>By click on the hide button the div is hide.</p>
+</body>
+
+</html>
